@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Navigation Menu Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+    }
+
+    /* Header using block */
+    .header {
+      margin-left: 10px;
+      margin-bottom: 40px;
+      margin-right: 10px;
+      background: #d6d8db ;
+      padding: 1rem;
+      text-align: center; 
+      font-weight: bold;
+    }
+
+    .header span {
+      color: red; 
+    }
+
+    .outer-box{
+        border: 2px solid black;
+        padding-bottom: 15px;
+        margin-top: 25px;
+        margin-left: 10px;
+       margin-right: 10px;
+    }
+
+    .nav-row-top .nav-btn {
+      display: inline-block;      
+      background: #427fe2;
+     color: rgb(0, 0, 0);
+      padding: 0.5rem 1rem;
+      margin: 0.25rem;
+      text-decoration: none;
+    }
+
+    
+    
+
+    .nav-row-bottom .nav-btn {
+      float: left;               
+      background: #37c271;
+      color: rgb(0, 0, 0);
+      padding: 0.5rem 1rem;
+      margin: 0.25rem;
+      text-decoration: none;
+    }
+
+    /* Clearfix technique */
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    /* Inline example (not for layout, just for demo) */
+    .note {
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 0.5rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+<div class="outer-box">
+  <div class="header">
+    My <span>Website</span> Navigation
+  </div>
+
+  <div class="nav-row-top">
+    <a href="#" class="nav-btn">Home</a>
+    <a href="#" class="nav-btn">About</a>
+    <a href="#" class="nav-btn">Services</a>
+    <a href="#" class="nav-btn">Contact</a>
+  </div>
+
+  <div class="nav-row-bottom clearfix">
+    <a href="#" class="nav-btn">Dashboard</a>
+    <a href="#" class="nav-btn">Profile</a>
+    <a href="#" class="nav-btn">Messages</a>
+    <a href="#" class="nav-btn">Logout</a>
+  </div>
+
+</div>
+
+<br><br><br>
+
+<p style="text-align:end;">
+ <u>  <b>
+           <i>
+              Created by:Saurabh Mishra
+              <br>
+              Admission No.:2025B01010514
+          </i>
+     </b>
+</u>
+</p>
+
+</body>
+</html>

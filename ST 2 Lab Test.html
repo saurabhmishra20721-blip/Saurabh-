@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Navigation Menu Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+    }
+
+    /* Header */
+    .header {
+      margin: 25px 10px 40px;
+      background: #d6d8db;
+      padding: 1rem;
+      text-align: center;
+      font-weight: bold;
+    }
+    .header span { color: red; }
+
+    .outer-box {
+      border: 2px solid black;
+      margin: 0 10px;
+      padding-bottom: 15px;
+    }
+
+    /* Top navigation row */
+    .nav-row-top {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .nav-row-top a {
+      background: #427fe2;
+      color: #000;
+      padding: 0.5rem 1rem;
+      margin: 0.25rem;
+      text-decoration: none;
+    }
+
+    /* Bottom navigation row */
+    .nav-row-bottom {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-left: 0.25rem;
+    }
+    .nav-row-bottom a {
+      background: #37c271;
+      color: #000;
+      padding: 0.5rem 1rem;
+      margin: 0.25rem;
+      text-decoration: none;
+    }
+
+    /* Note styling (same as original) */
+    .note {
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 0.5rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer-box">
+    <div class="header">
+      My <span>Website</span> Navigation
+    </div>
+
+    <div class="nav-row-top">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="nav-row-bottom">
+      <a href="#">Dashboard</a>
+      <a href="#">Profile</a>
+      <a href="#">Messages</a>
+      <a href="#">Logout</a>
+    </div>
+  </div>
+</body>
+</html>

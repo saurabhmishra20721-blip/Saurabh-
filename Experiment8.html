@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Profile Cards</title>
+  <style>
+    /* Reset and base styles */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+       display: flex;                  /* Use flex on body to center the whole container */
+      justify-content: center;        /* Horizontal center */
+      align-items: center;            /* Vertical center */
+      min-height: 100vh;
+    }
+
+    .outer-box {
+      border: 2px solid #000000;
+      border-radius: 6px;
+      padding: 2rem;
+     
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+
+    /* Main container uses flexbox to arrange cards in a row */
+    .card-container {
+      display: flex;                  /* Flex layout for cards */
+      flex-direction: row;            /* Row direction (can switch to column on small screens) */
+      justify-content: center;        /* Center cards along the main axis */
+      align-items: center;            /* Align cards along the cross axis */
+      gap: 1.5rem;                    /* Space between cards */
+      padding: 2rem;
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    /* Individual card */
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(17, 24, 39, 0.08);
+      width: 300px;
+      padding: 1.25rem 1.5rem;
+      display: flex;                  /* Flex layout inside the card */
+      flex-direction: column;         /* Stack content vertically */
+      justify-content: flex-start;    /* Start content at the top */
+      align-items: center;            /* Center content horizontally */
+      text-align: center;
+    }
+
+    /* Circular initials avatar */
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #1d4ed8;            /* Blue circle */
+      color: #ffffff;
+      display: flex;                   /* Center initials in the circle */
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Name and details */
+    .name {
+      font-weight: 700;
+      font-size: 1.125rem;
+      margin: 0.25rem 0 0.5rem;
+    }
+    .program { color: #334155; margin: 0.125rem 0; }
+    .roll    { color: #475569; margin: 0.125rem 0; }
+    .year    { color: #64748b; margin: 0.25rem 0 0; font-weight: 600; }
+
+    /* Card separator for subtle grouping */
+    .divider {
+      height: 1px;
+      width: 100%;
+      background: #e5e7eb;
+      margin: 0.75rem 0 0.75rem;
+    }
+
+    /* Responsive: stack cards on small screens */
+    @media (max-width: 768px) {
+      .card-container {
+        flex-direction: column;       /* Switch to column layout */
+        align-items: stretch;         /* Stretch cards to container width */
+      }
+      .card {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card-container">
+
+    <div class="outer-box">
+    <article class="card" aria-label="Student: Jeet Kumar">
+      <div class="avatar" aria-hidden="true">JK</div>
+      <h2 class="name">Jeet Kumar</h2>
+      <div class="divider"></div>
+      <p class="program">B.Tech - CSE</p>
+      <p class="roll">Roll No: 21CS1007</p>
+      <p class="year">1st Year</p>
+    </article>
+
+
+    <article class="card" aria-label="Student: Asha Rani">
+      <div class="avatar" aria-hidden="true">AR</div>
+      <h2 class="name">Asha Rani</h2>
+      <div class="divider"></div>
+      <p class="program">B.Tech - IT</p>
+      <p class="roll">Roll No: 21IT1012</p>
+      <p class="year">1st Year</p>
+    </article>
+
+
+    <article class="card" aria-label="Student: Rohit Kumar">
+      <div class="avatar" aria-hidden="true">RK</div>
+      <h2 class="name">Rohit Kumar</h2>
+      <div class="divider"></div>
+      <p class="program">B.Tech - ECE</p>
+      <p class="roll">Roll No: 21EC1009</p>
+      <p class="year">1st Year</p>
+    </article>
+  </main>
+</div>
+
+
+
+
+
+ <u>  <b>
+           <i>
+              Created by:Saurabh Mishra
+              <br>
+              Admission No.:2025B01010514
+          </i>
+     </b>
+</u>
+
+
+</body>
+</html>
